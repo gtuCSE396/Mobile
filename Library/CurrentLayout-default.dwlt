@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 879, y: 492}
   m_MaxSize: {x: 16004, y: 14042}
   vertical: 0
-  controlID: 6027
+  controlID: 55
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 604, y: 492}
   m_MaxSize: {x: 12004, y: 14042}
   vertical: 1
-  controlID: 6028
+  controlID: 56
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 604, y: 221}
   m_MaxSize: {x: 12004, y: 4021}
   vertical: 0
-  controlID: 6029
+  controlID: 57
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -357,7 +357,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -370,20 +370,20 @@ MonoBehaviour:
       y: 21
       width: 404
       height: 614
-    m_Scale: {x: 0.31979167, y: 0.31979167}
-    m_Translation: {x: 201.99998, y: 307}
+    m_Scale: {x: 0.33072916, y: 0.33072916}
+    m_Translation: {x: 202, y: 307}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -631.6612
-      y: -960
-      width: 1263.3224
-      height: 1920
+      x: -610.77167
+      y: -928.252
+      width: 1221.5433
+      height: 1856.504
     m_MinimalGUI: 1
-  m_defaultScale: 0.31979167
+  m_defaultScale: 0.33072916
   m_LastWindowPixelSize: {x: 404, y: 635}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -421,7 +421,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d8ebfffff0ebffff36ecffff1eeeffffcaeeffff34f1ffff4af1ffffbcf1ffffb6f5ffffc0f5ffffd0f5ffffe0f5fffff4f5ffff02f6ffff60f8ffffcefaffffc4390000004100006c4500000046000098460000d6460000584800006a480000
+      m_ExpandedIDs: f0faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -524,7 +524,7 @@ MonoBehaviour:
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 1, y: 1}
+      m_Size: {x: 1.5, y: 1.5}
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
@@ -605,14 +605,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\mamik\Desktop\Job Stuff\Cse396\Mobile Repo\Mobile
+  m_LastProjectPath: C:\Users\mamik\Desktop\Job Stuff\Unity Projects\Mobile
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7a3a0000
-    m_LastClickedID: 14970
-    m_ExpandedIDs: 00000000743a0000763a0000783a00007a3a00007c3a00007e3a0000803a0000883a000000ca9a3b
+    m_SelectedIDs: 3a390000
+    m_LastClickedID: 14650
+    m_ExpandedIDs: 000000003439000036390000383900003a3900003c3900003e390000403900004239000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,7 +640,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000743a0000763a0000783a00007a3a00007c3a00007e3a0000803a0000883a000000ca9a3b
+    m_ExpandedIDs: 000000003439000036390000383900003a3900003c3900003e3900004039000042390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
