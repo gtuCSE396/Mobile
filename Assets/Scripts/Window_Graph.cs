@@ -20,28 +20,28 @@ public class Window_Graph : MonoBehaviour {
 
         graphContainer = gameObject.GetComponent<RectTransform>();      
 
-        valueList = new List<int>() { 5, 15, 30, 45, 30, 22, 17, 15, 13, 17, 25, 37, 40, 36, 33 , 11 , 22, 35};
+        valueList = new List<int>() { 5, 15, 30, 45, 30, 22, 17, 15, 13, 17, 25, 37, 40, 36, 33 , 11 , 22, 35}; // Initial values to process in graph
     }
 
     private void FixedUpdate()
     {
-        if(Time.fixedTime >= customTimer) // Once in a second
+        if(Time.fixedTime >= customTimer) // Do the job inside this condition once in a second.
         {
             if (counter != valueList.Count)
                 counter++;
             else
             {
-                if (GameObject.FindGameObjectsWithTag("mortal").Length > 0)
+                if (GameObject.FindGameObjectsWithTag("mortal").Length > 0) // This condition kills the previous graph nodes and connections.
                 {
                     GameObject[] mortals = GameObject.FindGameObjectsWithTag("mortal");
                     foreach (GameObject mortal in mortals)
                         GameObject.Destroy(mortal);
-                }
-                for (int i = 1; i < valueList.Count; i++)
+                }   
+                for (int i = 1; i < valueList.Count; i++)   // This condition shifts the graph when the panel is full.
                 {
                     valueList[i - 1] = valueList[i];
                 }
-                valueList[valueList.Count - 1] = UnityEngine.Random.Range(1, 50);
+                valueList[valueList.Count - 1] = UnityEngine.Random.Range(1, 50);   // Assigns random value to the last item for simulation purposes.
             }
             ShowGraph(valueList);
             customTimer = Time.fixedTime + 1.0f;
@@ -49,7 +49,7 @@ public class Window_Graph : MonoBehaviour {
     }
 
 
-    private GameObject CreateCircle(Vector2 anchoredPosition) {
+    private GameObject CreateCircle(Vector2 anchoredPosition) {         // Draws a node on the graph.
         GameObject gameObject = new GameObject("circle", typeof(Image));
         gameObject.transform.SetParent(graphContainer, false);
         gameObject.GetComponent<Image>().sprite = circleSprite;
@@ -62,7 +62,7 @@ public class Window_Graph : MonoBehaviour {
         return gameObject;
     }
 
-    private void ShowGraph(List<int> valueList) {
+    private void ShowGraph(List<int> valueList) {                       // Displays the graph.
 
         GameObject circle = GameObject.Find("circle");
         GameObject connection = GameObject.Find("dotConnection");
@@ -83,7 +83,7 @@ public class Window_Graph : MonoBehaviour {
         }
     }
 
-    private void CreateDotConnection(Vector2 dotPositionA, Vector2 dotPositionB) {
+    private void CreateDotConnection(Vector2 dotPositionA, Vector2 dotPositionB) {      // Draws a connection between nodes.
         GameObject gameObject = new GameObject("dotConnection", typeof(Image));
         gameObject.tag = "mortal";
         gameObject.transform.SetParent(graphContainer, false);
