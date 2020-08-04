@@ -74,7 +74,6 @@
      <Compile Include="Assets\CodeMonkey\Utils\World_Bar.cs" />
      <Compile Include="Assets\CodeMonkey\Utils\World_Mesh.cs" />
      <Compile Include="Assets\CodeMonkey\Utils\World_Sprite.cs" />
-     <Compile Include="Assets\Scripts\Data.cs" />
      <Compile Include="Assets\Scripts\Date.cs" />
      <Compile Include="Assets\Scripts\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\SystemController.cs" />
