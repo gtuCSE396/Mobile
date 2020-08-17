@@ -1,5 +1,39 @@
 {
   "dependencies": {
+    "com.google.external-dependency-manager": {
+      "version": "1.2.156",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://unityregistry-pa.googleapis.com"
+    },
+    "com.google.firebase.app": {
+      "version": "6.15.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.google.external-dependency-manager": "1.2.156"
+      },
+      "url": "https://unityregistry-pa.googleapis.com"
+    },
+    "com.google.firebase.auth": {
+      "version": "6.15.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.google.firebase.app": "6.15.2"
+      },
+      "url": "https://unityregistry-pa.googleapis.com"
+    },
+    "com.google.firebase.database": {
+      "version": "6.15.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.google.firebase.auth": "6.15.2"
+      },
+      "url": "https://unityregistry-pa.googleapis.com"
+    },
     "com.unity.2d.animation": {
       "version": "3.2.2",
       "depth": 0,
@@ -87,7 +121,7 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.test-framework": "1.1.3"
+        "com.unity.test-framework": "1.1.1"
       },
       "url": "https://packages.unity.com"
     },
@@ -106,7 +140,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.14",
+      "version": "1.1.16",
       "depth": 0,
       "source": "registry",
       "dependencies": {
