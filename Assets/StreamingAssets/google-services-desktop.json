@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "248308837200",
+    "firebase_url": "https://mobile-desktop.firebaseio.com",
+    "project_id": "mobile-desktop",
+    "storage_bucket": "mobile-desktop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248308837200:android:7f5e7d7579ec35a95d1a55",
+        "android_client_info": {
+          "package_name": "com.flx.mobilepart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248308837200-jvo5et0stuidnjactun33sgpmpip1sk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsl1vPOFEVL4af_2Y3w8qL5nsh_5vUoZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248308837200-jvo5et0stuidnjactun33sgpmpip1sk9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
