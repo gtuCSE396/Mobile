@@ -11,6 +11,7 @@ public class ClientSide : MonoBehaviour
 {
     public InputField messageText;
     public Text connectionInfo;
+    public Text incomingData;
     
     private bool socketReady;
     private TcpClient socket;
@@ -26,7 +27,7 @@ public class ClientSide : MonoBehaviour
         
         // default values
         string host = "127.0.0.1";
-        int port = 8000;
+        int port = 9000;
 
         string h;
         int p;
@@ -74,14 +75,17 @@ public class ClientSide : MonoBehaviour
 
     private void OnIncomingData(string data)
     {
-        Debug.Log("Incoming: Data: " + data);
+        if (data.Contains("mobile"))
+            return;
+        Debug.Log("Incoming Data: " + data);
+        incomingData.text = data;
     }
 
     public void Send()
     {
         if (!socketReady)
             return;
-        writer.WriteLine(messageText.text);
+        writer.WriteLine("mobile:" + messageText.text);
         connectionInfo.text = "\'" + messageText.text + "\' sent.";
         writer.Flush();
     }
