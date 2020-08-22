@@ -87,6 +87,7 @@
      <Compile Include="Assets\Scripts\GraphCanvasController.cs" />
      <Compile Include="Assets\Scripts\LogPanelCanvasController.cs" />
      <Compile Include="Assets\Scripts\SceneChanger.cs" />
+     <Compile Include="Assets\Scripts\SocketScripts\ClientSide.cs" />
      <Compile Include="Assets\Scripts\SystemController.cs" />
      <Compile Include="Assets\Scripts\mainpage_button_on_click.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
