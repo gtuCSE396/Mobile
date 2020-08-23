@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\BallLocationCanvasController.cs" />
      <Compile Include="Assets\Scripts\BallLocationHandler.cs" />
      <Compile Include="Assets\Scripts\CanvasGeneralController.cs" />
+     <Compile Include="Assets\Scripts\ClientSide.cs" />
      <Compile Include="Assets\Scripts\DataHolder.cs" />
      <Compile Include="Assets\Scripts\Date.cs" />
      <Compile Include="Assets\Scripts\DrawGraph.cs" />
