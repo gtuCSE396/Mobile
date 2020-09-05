@@ -3,14 +3,9 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - BallLocationCanvasController
     - BallLocationHandler
-    - CanvasGeneralController
     - ClientSide
     - CodeMonkey.Assets
-    - DataHolder
     - Date
-    - DrawGraph
-    - GraphCanvasController
-    - LogPanelCanvasController
     - SceneChanger
     - mainpage_button_on_click
     Unity.2D.Animation.Editor.dll:
@@ -44,71 +39,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.ToggleGroup
   sceneClasses:
-    Assets/Scenes/Graphic.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11172}
-    - Class: 114
-      Script: {instanceID: 11174}
-    - Class: 114
-      Script: {instanceID: 11196}
-    - Class: 114
-      Script: {instanceID: 11218}
-    - Class: 114
-      Script: {instanceID: 11284}
-    - Class: 114
-      Script: {instanceID: 11310}
-    - Class: 114
-      Script: {instanceID: 11544}
-    - Class: 114
-      Script: {instanceID: 11756}
-    - Class: 114
-      Script: {instanceID: 12222}
-    - Class: 114
-      Script: {instanceID: 12602}
-    - Class: 114
-      Script: {instanceID: 13606}
-    - Class: 114
-      Script: {instanceID: 13698}
-    - Class: 114
-      Script: {instanceID: 13900}
-    - Class: 114
-      Script: {instanceID: 14032}
-    - Class: 114
-      Script: {instanceID: 14316}
-    - Class: 114
-      Script: {instanceID: 14398}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
     Assets/Scenes/Main Page.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -206,9 +136,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12222}
     - Class: 114
+      Script: {instanceID: 12602}
+    - Class: 114
       Script: {instanceID: 13216}
     - Class: 114
       Script: {instanceID: 13698}
+    - Class: 114
+      Script: {instanceID: 13900}
     - Class: 114
       Script: {instanceID: 14032}
     - Class: 114
@@ -374,7 +308,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: b71a1f323abb82799ee505a9dafd5231
+      Hash: a6268592ead4de8bff6be01b50bc99b8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ClientSide
@@ -536,7 +470,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: c6de847c9935ace9bf9b7c305c75b4b8
+      Hash: 07a65e065da8d548fe2ca92236f3794f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BallLocationHandler
@@ -844,5 +778,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Main Page.unity
   - Assets/Scenes/Start.unity
-  - Assets/Scenes/Graphic.unity
-  playerPath: C:/Users/mamik/Desktop/mobile-socket.apk
+  playerPath: C:/Users/mamik/Desktop/mobile v1.3.apk

@@ -5,10 +5,13 @@ using System.IO;
 using System.Net.Sockets;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 using Color = UnityEngine.UI.ColorBlock;
 
 public class ClientSide : MonoBehaviour
 {
+
+    [SerializeField] GameObject BallLocationHandlerObject;
     public InputField messageText;
     public Text connectionInfo;
     public Text incomingData;
@@ -79,6 +82,8 @@ public class ClientSide : MonoBehaviour
             return;
         Debug.Log("Incoming Data: " + data);
         incomingData.text = data;
+        if (Char.IsDigit(data[0]))
+            dataArrived(data);
     }
 
     public void Send()
@@ -88,5 +93,26 @@ public class ClientSide : MonoBehaviour
         writer.WriteLine("mobile:" + messageText.text);
         connectionInfo.text = "\'" + messageText.text + "\' sent.";
         writer.Flush();
+    }
+
+    public void dataArrived(string data)
+    {
+        string[] splitArray = data.Split(char.Parse(" "));
+        if (splitArray.Count() == 3)
+        {
+            float positionX = int.Parse(splitArray[0]);
+            float positionY = int.Parse(splitArray[1]);
+            float positionDistance = int.Parse(splitArray[2]);
+
+            BallLocationHandlerObject.GetComponent<BallLocationHandler>().moveBall(positionX, positionY);
+            BallLocationHandlerObject.GetComponent<BallLocationHandler>().displayData(positionX, positionY, positionDistance);
+
+
+            //hpMovement.MoveSimulation(positionX, positionY, positionDistance, motorAngleSouth, motorAngleNorth, motorAngleWest, motorAngleEast);
+        }
+        else
+        {
+            Debug.Log("Not enough data.");
+        }
     }
 }

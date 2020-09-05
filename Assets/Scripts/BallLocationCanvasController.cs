@@ -11,7 +11,7 @@ public class BallLocationCanvasController : MonoBehaviour
     void Start()
     {
         canvas = GetComponent<Canvas>();
-        hideAll();
+        //hideAll();
     }
 
     public void showAll()
